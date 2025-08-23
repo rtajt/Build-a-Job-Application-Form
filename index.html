@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h1>Get a j*b at Valve</h1>
+    <div class="container">
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          aria-required="true"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          aria-required="true"
+        />
+        <label for="position">Position:</label>
+        <select name="position" id="position">
+          <option value="electrial">Electrial Engineer</option>
+          <option value="gamedev">Game Development Software Engineer</option>
+          <option value="softwarehw">Software Engineer for HW</option>
+          <option value="softwaresteam">Steam Software Engineer</option>
+        </select>
+        <fieldset class="radio-group">
+          <legend>When are you availabile?</legend>
+          <input
+            type="radio"
+            name="availability"
+            id="fulltime"
+            value="Full-Time"
+          />
+          <label for="fulltime">Full-Time</label>
+          <br />
+          <input
+            type="radio"
+            name="availability"
+            id="parttime"
+            value="Part-Time"
+          />
+          <label for="parttime">Part-Time</label>
+          <br />
+        </fieldset>
+        <label for="message">Why do you want this job?</label>
+        <br>
+        <textarea name="message" id="message" required></textarea>
+        <br>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>

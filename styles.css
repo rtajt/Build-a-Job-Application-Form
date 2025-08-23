@@ -1,0 +1,38 @@
+/*
+TODO: fix the following tests (and maybe make this look less shitty?
+17. You should use the :checked pseudo-class on .radio-group input[type="radio"] to add a box shadow when the radio button is selected.
+18. You should use the :checked pseudo-class on radio buttons to change the text color of the associated label when the option is selected.
+*/
+input:focus,
+textarea:focus {
+  border-color: blue;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: grey;
+}
+
+label:checked:target {
+  color: green;
+}
+input:first-of-type {
+  border-radius: 10px;
+}
